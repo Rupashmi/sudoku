@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sudoku Zone</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="header">
+    <div class="icon"><img src="assets/logo.png" alt=""></div>
+    <h1>Sudoku Zone</h1>
+  </div>
+
+   <select id="difficulty" onchange="generatePuzzle()">
+      <option value="easy">Easy</option>
+      <option value="medium" selected>Medium</option>
+      <option value="hard">Hard</option>
+    </select>
+
+  <div class="controls">
+    <button onclick="checkSolution()">Check</button>
+    <button onclick="confirmReset()">Reset</button>
+    <button onclick="generatePuzzle()">New Game</button>
+    <button onclick="giveHint()">Hint</button>
+    <button onclick="toggleTheme()">Theme</button>
+    <button id="timer">Time: 0s</button>
+  </div>
+
+  <div id="board"></div>
+  <div id="stats"></div>
+
+  <script src="script.js ">
+  </script>
+</body>
+
+</html>
